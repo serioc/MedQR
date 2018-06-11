@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:500');
+
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+p
+{
+	font-family: sans-serif;
+	font-size: 120%;
+	line-height: 190%;
+	text-align: justify;
+	margin: 3%;
+	color: #F9F3F4;
+}
+
+.intro
+{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(../images/med_bkgr2.png) no-repeat 50% 50%;
+	background-size: cover;
+	display: table;
+	top: 0;
+}
+.intro .inner
+{
+	display: table-cell;
+	vertical-align: middle; 
+	text-align: center;
+	padding-bottom: 25%
+}
+.content 
+{
+	max-width: 500px;
+	margin: auto;
+}
+.content h1
+{
+	font-family: 'Open Sans', sans-serif;
+	color: #F9F3F4;
+	font-size: 550%;
+	text-shadow: 3px 3px #098fa8;
+}
+.content h2
+{
+	font-family: 'Open Sans', sans-serif;
+	color: #F9F3F4;
+	font-size: 120%;
+	text-shadow: 3px 3px #098fa8;
+}
+.btn1
+{
+	font-size: 150%;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	color: #045607;
+	border: 3px solid #045607;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.btn2
+{
+	font-size: 150%;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	color: #FF6000;
+	border: 3px solid #FF6000;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.btn1:hover
+{
+	color: #F8EAEA;
+	border: 2px solid #F8EAEA;
+}
+.btn2:hover
+{
+	color: #F8EAEA;
+	border: 2px solid #F8EAEA;
+}
+@media (max-width: 768px)
+{
+	.content h1
+	{
+		font-size: 300%;
+	}
+	.btn1 .btn2
+	{
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+	p
+	{
+		font-size: 100%;
+		line-height: 160%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
