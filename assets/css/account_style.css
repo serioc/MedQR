@@ -1,0 +1,246 @@
+html, body
+{
+	height: 100%;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	color: #222;
+}
+
+.navbar
+{
+	padding: .8rem;
+}
+
+.navbar-nav li
+{
+	padding-right: 20px;
+}
+
+.nav-link
+{
+	font-size: 1.1em; !important;
+}
+
+/*Project Logo*/
+.logo
+{
+	width: 20%;
+	height: 20%;
+}
+
+/* Profile container */
+.profile 
+{
+  background-color: #CAC9C9;
+  margin: 0px;
+}
+
+/* Profile sidebar */
+.profile-sidebar 
+{
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img 
+{
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle 
+{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name 
+{
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job 
+{
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons 
+{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn 
+{
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child 
+{
+  margin-right: 0px;
+}
+    
+.profile-usermenu 
+{
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li 
+{
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child 
+{
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a 
+{
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i 
+{
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover 
+{
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active 
+{
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a 
+{
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+.collapsible 
+{
+    background-color: #0365A4;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover 
+{
+    background-color: #008CE6;
+}
+
+.collapsible:after 
+{
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after 
+{
+    content: "\2212";
+}
+
+.content 
+{
+    max-height: 0;
+	width: 100%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+/* Profile Content */
+.profile-content 
+{
+  padding: 50px;
+  background: #fff;
+  min-height: 460px;
+}
+
+.personal-info li.active 
+{
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    background-color: #008ecf;
+    border-radius: 0px !important;
+}
+
+.personal-info li 
+{
+    border: 1px solid #008ecf;
+    color: #ffffff;
+    border-radius: 0px !important;
+}
+
+.personal-info li 
+{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.col-md-4
+{
+	background-color: ;
+	padding: 2rem 2rem;
+}
+
+footer
+{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+	width: 100%;
+}
+hr.light
+{
+	border-top: 1px solid #d5d5d5; 
+	width: 75%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+footer a
+{
+	color: #d5d5d5;
+}
+hr.light-100
+{
+	border-top: 1px solid #d5d5d5; 
+	width: 100%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
