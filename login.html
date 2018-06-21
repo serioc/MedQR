@@ -12,15 +12,10 @@
 </head>
 
 <body>
-	<div class="logo">
-		<figure>
-			<a href="landing_page.html" title="MedQR" rel="home">
-			<img src="assets/images/MedQR.png" alt="Project Logo"> </a>
-		</figure>
-	</div>
-	
 	<div class="modal-dialog text-center">
 		<div class="col-sm-8 main-section">
+		<button type="submit" class="btn2"><i class="fas fa-sign-in-alt"></i>HOME</button>
+		
 			<div class="modal-content">
 				<div class="col-12 user-img">
 					<img src="assets/images/avatar.png" width="200px" height="200px">
@@ -37,8 +32,32 @@
 				</form>
 				
 				<div class="col-12 forgot">
-					<a href="#">Forgot Password?</a>
-			</div> <!--- End of Modal Content --->
+					<a href="#" onclick="document.getElementById('id03').style.display='block'">Forgot password?</a>
+				</div> <!--- End of Modal Content --->
+				
+				<div id="id03" class="modal3">
+				<form class="modal3-content" method="POST" action="/register">
+
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('id03').style.display='none'" class="close3" title="Close Modal">&times;</span>
+					</div>
+
+					<div class="container3">
+						<h2>Please enter your email to receive your password.</h2>
+							<hr>
+						<label for="email"><b>Email:</b></label>
+							<input class="input3" type="text" placeholder="Enter Email" name="email" required>
+						</label>
+
+						<div class="clearfix">
+							<button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn3">Cancel</button>
+							<button type="submit" class="submitbtn">Submit</button>
+							<p>A confirmation email with your password was sent to the email provided above.</p>
+						</div>
+					</div>
+				</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

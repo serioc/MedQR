@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['message'] = '';
-$mysqli = new mysqli("localhost1234", "root", "Shqiperi1!", "user accounts");
+$mysqli = new mysqli("localhost", "root", "", "user accounts");
 
 //the form has been submitted with post
 if ($_SERVER["REQUEST_METHOD"] == "POST") 

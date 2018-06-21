@@ -1,0 +1,260 @@
+<!DOCTYPE html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Account</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="assets/css/account_style.css" >
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="assets/images/MedQR_logo.png" class="logo"</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive"> 
+	 <span class="navbar-toggler-icon"></span> 
+	 </button> 
+	 <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="account.html">Account</a>
+			</li>				
+		</ul>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#">What is MedQR</a>
+			</li>				
+		</ul>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="landing_page.html">Log Out</a>
+			</li>				
+		</ul>
+	</div>
+</div>
+</nav>
+
+	<div class="container-fluid">
+		<div class="row profile">
+			<div class="col-md-3">
+				<div class="profile-sidebar">
+				
+					<!-- SIDEBAR USERPIC -->
+					<div class="profile-userpic">
+						<img src="assets/images/avatar.png" width="200px" height="200px" class="img-responsive" alt="">
+					</div>
+					<!-- END SIDEBAR USERPIC -->
+					
+					<!-- SIDEBAR USER TITLE -->
+					<div class="profile-usertitle">
+						<div class="profile-usertitle-name">
+							John Smith
+						</div>
+					</div>
+					<!-- END SIDEBAR USER TITLE -->
+					
+					<!-- SIDEBAR MENU -->
+					<div class="profile-usermenu">
+						<ul class="nav">
+							<li class="active">
+								<a href="#">
+								<i class="glyphicon glyphicon-home"></i>
+								View Public Profile </a><br><br>
+							</li>
+							<li>
+								<a href="#">
+								<i class="glyphicon glyphicon-user"></i>
+								Edit Profile </a>
+							</li>
+						</ul>
+					</div>
+					<!-- END MENU -->
+				</div>
+			</div> 
+
+			<div class="col-md-9">
+				<div class="profile-content">
+					<div class="container">
+						 <div class="row">
+							<!-- Collapsible -->
+							<button class="collapsible">PERSONAL INFORMATION</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>First Name : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Middle Name : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Last Name : </label><input type='text' class='form-control'  value='' disabled> 
+											<label>Gender : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Blood Group : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Eye Color : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Hair Color : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Height : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Weight(Kgs) : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Email :</label><input type='text' class='form-control'  value='' disabled> 
+											<label>Phone Number :</label><input type='text' class='form-control'  value='' disabled> 
+											<label>Organ Donor : </label><input type='text' class='form-control'  value='' disabled>
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<button class="collapsible">ADDRESS INFORMATION</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>Address Line 1 : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>City : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>State : </label><input type='text' class='form-control'  value='' disabled> 
+											<label>Country : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Zip Code : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Address Line 2 : </label><input type='text' class='form-control'  value='' disabled>
+											<label>City : </label><input type='text' class='form-control'  value='' disabled>
+											<label>State : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Country : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Zip Code :</label><input type='text' class='form-control'  value='' disabled> 
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<button class="collapsible">EMERGENCY CONTACT INFORMATION</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>First Name : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Last Name : </label><input type='text' class='form-control'  value='' disabled> 
+											<label>Relationship : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Phone 1 : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Phone 2 : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Email : </label><input type='text' class='form-control'  value='' disabled>
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<button class="collapsible">MEDICAL CONDITION</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>Condition : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Description : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<button class="collapsible">ALLERGIES</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>Allergy : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Description : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<button class="collapsible">PRIMARY PHYSICIAN</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>Name : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Phone : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Title : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Hospital/Clinic : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Street : </label><input type='text' class='form-control'  value='' disabled>
+											<label>City : </label><input type='text' class='form-control'  value='' disabled>
+											<label>State : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Zip Code : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Country : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Notes : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<button class="collapsible">INSURANCE INFORMATION</button>
+							<div class="content">
+								<div class="col-md-4" >
+									<div class="panel panel-primary">
+										<div class="panel-body">
+											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
+											<label>Insurance Provider : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Policy Number : </label><input type='text' class='form-control'  value=''  disabled>
+											<label>Phone : </label><input type='text' class='form-control'  value='' disabled>
+											<label>Notes : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+										</div>
+									</div>
+								</div>
+							</div><br>
+							<script>
+								var coll = document.getElementsByClassName("collapsible");
+								var i;
+
+								for (i = 0; i < coll.length; i++) {
+								  coll[i].addEventListener("click", function() {
+									this.classList.toggle("active");
+									var content = this.nextElementSibling;
+									if (content.style.maxHeight){
+									  content.style.maxHeight = null;
+									} else {
+									  content.style.maxHeight = content.scrollHeight + "px";
+									} 
+								  });
+								}
+							</script>
+						 </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer>
+<div class="container-fluid padding">
+<div class="row padding text-center">
+	<div class="col-md-4">
+		<img src="assets/images/wit_logo.png" width="140px" height="105px">
+		<hr class="light">
+		<p>(617) 989-4590</p>
+		<p>550 Huntington Ave, Boston, MA 02115</p>
+		<p>Boston, MA 02115</p>
+	</div>
+	<div class="col-md-4">
+		<h5>Policy Information<h5>
+		<hr class="light">
+		<a href="#"><h6>About Us</h6></a><br>
+		<a href="#"><h6>Privacy Policy</h6></a><br>
+		<a href="#"><h6>Terms and Agreements</h6></a>
+	</div>
+	<div class="col-md-4">
+		<h5>Need Help?<h5>
+		<hr class="light">
+		<a href="#"><h6>How QR code works</h6></a><br>
+		<a href="#"><h6>FAQ</h6></a><br>
+		<a href="#"><h6>Contact US</h6></a><br>
+	</div>
+	<div class="col-12">
+		<hr class="light-100">
+		<h5>&copy; MedQR Team 2018</h5>
+	</div>
+</div>	
+</div>
+
+</footer>  
+</html>
