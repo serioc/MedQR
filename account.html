@@ -9,6 +9,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/account.js"></script>
+	<script type="text/javascript" src="assets/js/collapsible.js"></script>
 	<link rel="stylesheet" href="assets/css/account_style.css" >
 </head>
 
@@ -63,18 +65,8 @@
 					
 					<!-- SIDEBAR MENU -->
 					<div class="profile-usermenu">
-						<ul class="nav">
-							<li class="active">
-								<a href="#">
-								<i class="glyphicon glyphicon-home"></i>
-								View Public Profile </a><br><br>
-							</li>
-							<li>
-								<a href="#">
-								<i class="glyphicon glyphicon-user"></i>
-								Edit Profile </a>
-							</li>
-						</ul>
+						<a href="#"><i class="glyphicon glyphicon-home"></i>View Public Profile </a><br>
+						<button class="edit_btn" id="edit_btn">Edit Profile</button>
 					</div>
 					<!-- END MENU -->
 				</div>
@@ -87,137 +79,235 @@
 							<!-- Collapsible -->
 							<button class="collapsible">PERSONAL INFORMATION</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>First Name : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Middle Name : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Last Name : </label><input type='text' class='form-control'  value='' disabled> 
-											<label>Gender : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Blood Group : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Eye Color : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Hair Color : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Height : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Weight(Kgs) : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Email :</label><input type='text' class='form-control'  value='' disabled> 
-											<label>Phone Number :</label><input type='text' class='form-control'  value='' disabled> 
-											<label>Organ Donor : </label><input type='text' class='form-control'  value='' disabled>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label>First Name : </label><input type='text' class='form-control'  value=''  disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Middle Name : </label><input type='text' class='form-control'  value=''  disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Last Name : </label><input type='text' class='form-control'  value='' disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label>Gender : </label><input type='text' class='form-control'  value='' disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Blood Group : </label><input type='text' class='form-control'  value='' disabled>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Eye Color : </label><input type='text' class='form-control'  value='' disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+												<div class="col-md-4">
+													<label>Hair Color : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">
+													<label>Height : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">
+													<label>Weight(Kgs) : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+                                            </div>
+                                            <div class="row">
+												<div class="col-md-4">
+													<label>Email :</label><input type='text' class='form-control'  value='' disabled> 
+												</div>
+												<div class="col-md-4">
+													<label>Phone Number :</label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">												
+													<label>Organ Donor : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+                                            </div>
 										</div>
 									</div>
 								</div>
 							</div><br>
 							<button class="collapsible">ADDRESS INFORMATION</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>Address Line 1 : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>City : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>State : </label><input type='text' class='form-control'  value='' disabled> 
-											<label>Country : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Zip Code : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Address Line 2 : </label><input type='text' class='form-control'  value='' disabled>
-											<label>City : </label><input type='text' class='form-control'  value='' disabled>
-											<label>State : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Country : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Zip Code :</label><input type='text' class='form-control'  value='' disabled> 
+											<div class="row">
+												<div class="col-md-4">	
+													<label>Address Line 1 : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>City/Town : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>State : </label><input type='text' class='form-control'  value='' disabled> 
+												</div>
+												<div class="col-md-4">	
+													<label>Country : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Zip Code : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">	
+													<label>Address Line 2 : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>City/Town : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>State : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Country : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Zip Code :</label><input type='text' class='form-control'  value='' disabled> 
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div><br>
 							<button class="collapsible">EMERGENCY CONTACT INFORMATION</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>First Name : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Last Name : </label><input type='text' class='form-control'  value='' disabled> 
-											<label>Relationship : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Phone 1 : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Phone 2 : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Email : </label><input type='text' class='form-control'  value='' disabled>
+											<div class="row">
+												<div class="col-md-4">	
+													<label>First Name : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Last Name : </label><input type='text' class='form-control'  value='' disabled>
+												</div>												
+												<div class="col-md-4">	
+													<label>Relationship : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">	
+													<label>Phone 1 : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Phone 2 : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Email : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div><br>
 							<button class="collapsible">MEDICAL CONDITION</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>Condition : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Description : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+											<div class="col-md-9">
+												<label>Condition : </label><input type='text' class='form-control'  value=''  disabled>
+											</div>
+											<div class="col-md-9">
+												<label>Description : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="7"  value='' disabled></textarea>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div><br>
 							<button class="collapsible">ALLERGIES</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>Allergy : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Description : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+											<div class="col-md-9">
+												<label>Allergy : </label><input type='text' class='form-control'  value=''  disabled>
+											</div>
+											<div class="col-md-9">
+												<label>Description : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="7"  value='' disabled></textarea>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div><br>
 							<button class="collapsible">PRIMARY PHYSICIAN</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>Name : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Phone : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Title : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Hospital/Clinic : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Street : </label><input type='text' class='form-control'  value='' disabled>
-											<label>City : </label><input type='text' class='form-control'  value='' disabled>
-											<label>State : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Zip Code : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Country : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Notes : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+											<div class="row">
+												<div class="col-md-4">	
+													<label>Name : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Phone : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Title : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">	
+													<label>Hospital/Clinic : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Street : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>City : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">	
+													<label>State : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Zip Code : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+												<div class="col-md-4">	
+													<label>Country : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-9">	
+													<label>Notes : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="7"  value=''  disabled></textarea>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div><br>
 							<button class="collapsible">INSURANCE INFORMATION</button>
 							<div class="content">
-								<div class="col-md-4" >
+								<div class="col-md-12" >
 									<div class="panel panel-primary">
 										<div class="panel-body">
-											<div align="right"><a href='#'><span class='glyphicon glyphicon-tasks'></span> &nbsp Edit </a></div>
-											<label>Insurance Provider : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Policy Number : </label><input type='text' class='form-control'  value=''  disabled>
-											<label>Phone : </label><input type='text' class='form-control'  value='' disabled>
-											<label>Notes : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="3"  value=''  disabled></textarea>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Insurance Provider : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">
+													<label>Policy Number : </label><input type='text' class='form-control'  value=''  disabled>
+												</div>
+												<div class="col-md-4">
+													<label>Phone : </label><input type='text' class='form-control'  value='' disabled>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-9">
+													<label>Notes : </label><textarea type='text' class='form-control' cols="20" id="description" name="description" maxlength="200" rows="7"  value='' disabled></textarea>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div><br>
-							<script>
-								var coll = document.getElementsByClassName("collapsible");
-								var i;
-
-								for (i = 0; i < coll.length; i++) {
-								  coll[i].addEventListener("click", function() {
-									this.classList.toggle("active");
-									var content = this.nextElementSibling;
-									if (content.style.maxHeight){
-									  content.style.maxHeight = null;
-									} else {
-									  content.style.maxHeight = content.scrollHeight + "px";
-									} 
-								  });
-								}
-							</script>
-						 </div>
+						 </div><br>
+						 <button class="save_btn" id="save_btn" style="float:right;">Save Changes</button>
 					</div>
 				</div>
 			</div>
