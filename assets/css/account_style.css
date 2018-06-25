@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
 html, body
 {
 	height: 100%;
@@ -5,43 +7,40 @@ html, body
 	font-family: "Poppins", sans-serif;
 	color: #222;
 }
-
 .navbar
 {
 	padding: .8rem;
 }
-
 .navbar-nav li
 {
 	padding-right: 20px;
 }
-
 .nav-link
 {
 	font-size: 1.1em; !important;
 }
-
 /*Project Logo*/
 .logo
 {
 	width: 20%;
 	height: 20%;
 }
-
 /* Profile container */
 .profile 
 {
   background-color: #CAC9C9;
   margin: 0px;
 }
-
 /* Profile sidebar */
 .profile-sidebar 
 {
+  margin-top: 32px;
   padding: 20px 0 10px 0;
   background: #fff;
+  text-align: center;
+  opacity: .95;
+  box-shadow: 0.5px 0.5px 30px #848484
 }
-
 .profile-userpic img 
 {
   float: none;
@@ -52,13 +51,11 @@ html, body
   -moz-border-radius: 50% !important;
   border-radius: 50% !important;
 }
-
 .profile-usertitle 
 {
   text-align: center;
   margin-top: 20px;
 }
-
 .profile-usertitle-name 
 {
   color: #5a7391;
@@ -66,7 +63,6 @@ html, body
   font-weight: 600;
   margin-bottom: 7px;
 }
-
 .profile-usertitle-job 
 {
   text-transform: uppercase;
@@ -74,75 +70,11 @@ html, body
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 15px;
-}
-
-.profile-userbuttons 
-{
-  text-align: center;
-  margin-top: 10px;
-}
-
-.profile-userbuttons .btn 
-{
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 6px 15px;
-  margin-right: 5px;
-}
-
-.profile-userbuttons .btn:last-child 
-{
-  margin-right: 0px;
-}
-    
+}   
 .profile-usermenu 
 {
   margin-top: 30px;
 }
-
-.profile-usermenu ul li 
-{
-  border-bottom: 1px solid #f0f4f7;
-}
-
-.profile-usermenu ul li:last-child 
-{
-  border-bottom: none;
-}
-
-.profile-usermenu ul li a 
-{
-  color: #93a3b5;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.profile-usermenu ul li a i 
-{
-  margin-right: 8px;
-  font-size: 14px;
-}
-
-.profile-usermenu ul li a:hover 
-{
-  background-color: #fafcfd;
-  color: #5b9bd1;
-}
-
-.profile-usermenu ul li.active 
-{
-  border-bottom: none;
-}
-
-.profile-usermenu ul li.active a 
-{
-  color: #5b9bd1;
-  background-color: #f6f9fb;
-  border-left: 2px solid #5b9bd1;
-  margin-left: -2px;
-}
-
 .collapsible 
 {
     background-color: #0365A4;
@@ -155,12 +87,10 @@ html, body
     outline: none;
     font-size: 15px;
 }
-
 .active, .collapsible:hover 
 {
     background-color: #008CE6;
 }
-
 .collapsible:after 
 {
     content: '\002B';
@@ -169,12 +99,10 @@ html, body
     float: right;
     margin-left: 5px;
 }
-
 .active:after 
 {
     content: "\2212";
 }
-
 .content 
 {
     max-height: 0;
@@ -183,7 +111,6 @@ html, body
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
-
 /* Profile Content */
 .profile-content 
 {
@@ -191,34 +118,25 @@ html, body
   background: #fff;
   min-height: 460px;
 }
-
-.personal-info li.active 
-{
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-    background-color: #008ecf;
-    border-radius: 0px !important;
-}
-
-.personal-info li 
-{
-    border: 1px solid #008ecf;
-    color: #ffffff;
-    border-radius: 0px !important;
-}
-
-.personal-info li 
-{
-    border-radius: 5px 5px 0px 0px;
-}
-
-.col-md-4
+.col-md-4, .col-md-6, .col-md-9
 {
 	background-color: ;
 	padding: 2rem 2rem;
 }
-
+.edit_btn
+{
+	color: #008AFF; 
+}
+.save_btn
+{
+	color: #FFF;
+	background-color: #60D108;
+	border: 1px solid;
+	border-radius: .3rem;
+	padding: .5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 footer
 {
 	background-color: #3f3f3f;

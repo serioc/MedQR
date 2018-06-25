@@ -62,6 +62,12 @@ html, body
 	background-color: #60D108;
 	border: 1px solid;
 }
+.btn-outline-secondary:hover
+{
+	color: #FFF;
+	background-color: #4DA906;
+	border: 1px solid;
+}
 .padding
 {
 	padding-bottom: 0rem;
